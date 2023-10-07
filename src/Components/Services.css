@@ -1,0 +1,213 @@
+.Star-a-proj {
+   
+    width: 100%;
+    height: auto;
+    padding: 35px;
+
+    display: flex;
+
+}
+
+#Proj-left {
+    flex: 1;
+    height: 100%;
+
+}
+
+#Proj-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+#Proj-left-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+#Proj-left-description {
+
+    display: flex;
+    gap: 50px;
+
+}
+
+#description-note {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+#getintouch-btn {
+    width: 232px;
+    height: 81px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+
+}
+
+/* ========== SWIPPER STYLES ============ */
+
+.Swipercard {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+   margin-bottom: 25px;
+}
+
+#card--1 {
+    width: 310px;
+    height: 511px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding: 10px;
+    color: #FFFFFF;
+
+
+}
+
+#cards-container {
+    /* overflow: hidden; */
+    word-wrap: break-word;
+}
+
+#Image-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ellipse 5 */
+#Card-profile-bg {
+    width: 219px;
+    height: 219px;
+    background: rgba(14, 14, 14, 0.32);
+    margin-top: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Card-img {
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+}
+
+#Title-container {
+    display: grid;
+    justify-content: center;
+}
+#Title-for-card {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+#Line-break-Card {
+    margin-top: -6px;
+    color: rgba(192, 183, 232, 0.33);
+    border: 1px solid rgba(192, 183, 232, 0.33);
+}
+#Description-for-card {
+    text-align: center;
+    padding: 2px 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media screen and (max-width:769px) {
+
+    #getintouch-btn {
+        width: 180px;
+        height: 60px;
+        margin-top: -70px;
+    }
+    #card--1 {
+        width: 270px;
+        height: 450px;
+    }
+    #Card-profile-bg {
+        height: 180px;
+        background: rgba(14, 14, 14, 0.32);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Card-img {
+        width: 180px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #Title-container {
+        display: grid;
+        justify-content: center;
+    }
+    #Title-for-card {
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+    #Description-for-card {
+        text-align: start;
+        padding: 2px 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .Swipercard {
+        margin-left: 10px;
+    }
+    #card--1 {
+        padding: 5px;
+    }
+    .Star-a-proj {
+        display: grid;
+            margin-left: 0px;
+        }
+        
+    #Proj-left-description {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #getintouch-btn {
+        margin-top: -8px;
+    }
+}
+
+
+@media screen and (min-width:769px) {
+    #getintouch-btn {
+        margin-top: 105px;
+    }
+
+
+}

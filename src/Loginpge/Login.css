@@ -1,0 +1,27 @@
+
+
+
+body{
+
+color: white;
+
+}
+
+.Login-Title{
+    color: rgb(3, 106, 144); 
+}
+
+.username-title{
+color: white;
+
+}
+.pswd-title{
+    color: white;
+}
+
+vedio{
+    width: 100px;
+    height: 100%;
+    color: blue;
+    
+}

@@ -1,0 +1,215 @@
+.flip-container {
+    perspective: 1000px;
+    width: 220px;
+    height: 320px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    border-radius: 40px;
+    border: 2.5px solid #E0E0E0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    background-clip: text;
+}
+
+.flip-container:hover .flipperCard .front-card {
+    transform: rotateY(180deg);
+    transform-origin: center center;
+    /* Rotate at the center */
+}
+
+.flip-container .flipperCard {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front-card,
+.Card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    text-align: center;
+    transition: transform 0.6s;
+    /* Add transform transition */
+}
+
+.front-card h3 {
+margin-top: 8rem;
+    height: 100%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 25px;
+    
+    /* margin-top: 20px; */
+
+    /* headline_Grad */
+    background: linear-gradient(79.62deg, rgba(255, 255, 255, 0.72) -8.51%, #FFFFFF 35.28%, rgba(169, 198, 215, 0.64) 101.59%);
+    -webkit-background-clip: text;
+
+}
+
+.front-card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.Card-back {
+    transform: rotateY(180deg);
+
+}
+
+.Card-back p {
+    padding: 10px;
+}
+
+.flip-container:hover .flipperCard .Card-back {
+    transform: rotateY(0deg);
+}
+
+
+
+
+
+
+/* Base styles */
+.Main-body-for-ind-we-serve {
+    height: 100%;
+    width: 100%;
+}
+
+.Industries-we-serve {
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle-6 {
+    width: 60%;
+    height: 163.35px;
+    position: relative;
+    background: #211E2E;
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 60px;
+}
+
+
+/* INDUSTRIES WE SERVE */
+.industries-we-serve {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E0E0E0;
+}
+
+.below-arrow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#svg-icon {
+    bottom: -5px;
+    width: 68px;
+    height: 68px;
+}
+
+/* =======SCROLL ACTIONS========= */
+
+.AllScrolSection {
+    padding: 25px;
+    margin-top: 20px;
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --duration: 30s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+    gap: var(--gap);
+    width: 100%;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    mask-image: linear-gradient(var(--mask-direction, to right),
+            hsl(0 0% 0% / 0),
+            hsl(0 0% 0% / 1) 20%,
+            hsl(0 0% 0% / 1) 80%,
+            hsl(0 0% 0% / 0));
+}
+
+.marquee__group {
+    flex-shrink: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll-x var(--duration) linear infinite;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    #svg-icon {
+        position: absolute;
+        bottom: -30px
+    }
+
+    .industries-we-serve {
+        position: relative;
+        top: 10%;
+        text-align: center;
+        width: 100%;
+        font-family: 'Montserrat';
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .image-container #in-img {
+        width: 65%;
+    }
+
+    #svg-icon {
+        position: absolute;
+        bottom: -30px
+    }
+
+    .industries-we-serve {
+        font-weight: 500;
+        font-size: 35px;
+
+    }
+
+
+}

@@ -1,0 +1,204 @@
+/* CSS for #WelcomeTitles-contnt */
+#WelcomeTitles-contnt {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+/* CSS for #Titles-holder */
+#Titles-holder {
+  display: grid;
+  justify-content: center;
+  margin-top: -80vh;
+}
+
+/* CSS for #Initial-scroll-content */
+#Initial-scroll-content {
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+}
+
+/* Keyframes for shearAnimation */
+@keyframes shearAnimation {
+  0% {
+    transform: skewX(-15deg);
+  }
+
+  100% {
+    transform: skewX(15deg);
+  }
+}
+
+/* CSS for #SpanContent */
+#SpanContent {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: white;
+  font-size: 38px;
+  line-height: 50px;
+  animation: shearAnimation 2s infinite linear alternate;
+}
+
+/* CSS for #svgShowdown */
+#svgShowdown {
+  margin-top: -25%;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Keyframes for floatUpDown */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* CSS for #scrollDownName */
+#scrollDownName {
+  color: antiquewhite;
+  font-size: larger;
+  margin-top: 45%;
+  animation: dimmingAnimation 1s ease infinite alternate;
+}
+
+/* Keyframes for dimmingAnimation */
+@keyframes dimmingAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* CSS for #someImg */
+#someImg {
+  object-fit: cover;
+  height: 90vh;
+  width: 100vw;
+}
+
+/* CSS for #WelcomeTitles */
+#WelcomeTitles {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+/* CSS for .pushin-scene */
+.pushin-scene {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+/* CSS for #backgroundImg */
+#backgroundImg {
+  width: 100%;
+}
+
+/* CSS for #layer1box */
+#layer1box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* CSS for #Welcome title */
+#Welcome title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+}
+
+/* CSS for #LogoOFcrewbyte */
+#LogoOFcrewbyte {
+  margin-top: 20px;
+  width: 200px;
+}
+
+/* CSS for #firstscroll-content */
+#firstscroll-content {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+}
+
+.Secondscroll-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for #first-scroll-title */
+#first-scroll-title {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 40px;
+}
+
+.mission-heading,
+.vision-heading {
+  text-decoration: underline;
+}
+
+#OurMission,
+#OurVision {
+  text-align: center;
+  width: 400px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .Secondscroll-content {
+    display: grid;
+    gap: 30px;
+  }
+
+  .OurMission-Container {
+    display: grid;
+    justify-content: center;
+    flex: 1;
+    order: 1;
+
+  }
+
+  .OurVision-Container {
+    flex: 1;
+    order: 2;
+    display: grid;
+    justify-content: center;
+  }
+
+  #OurMission,
+  #OurVision {
+    width: 300px;
+  }
+}
+
+/* Additional CSS for media query (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  #svgShowdown {
+    margin-top: -15%;
+    animation: floatUpDown 2s ease-in-out infinite;
+  }
+}

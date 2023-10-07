@@ -1,0 +1,217 @@
+
+
+.navbar {
+    height: 4.2rem;
+   
+}
+
+#NavLogo {
+    width: 160px;
+    margin-top: -60px;
+
+}
+
+.navbar-toggler {
+    margin-right: 30px;
+    margin-top: -40px;
+}
+
+/* CONTACT US & REQUEST-QUOTE ON NAV BAR ARRANGEMENT */
+#navbarText {
+    text-align: center;
+
+}
+
+/* Add this CSS to your existing stylesheet */
+.navbar-nav.ml-auto.mb-2.mb-lg-0 li.nav-item a.nav-link {
+    color: white; /* Default link color */
+    transition: transform 0.3s; /* Add a transition effect to the transform property */
+}
+
+/* Apply the hover effect */
+.navbar-nav.ml-auto.mb-2.mb-lg-0 li.nav-item a.nav-link:hover {
+    transform: scaleX(1.1); /* Scale up the link on hover (adjust the value as needed) */
+}
+
+
+
+
+.navbar-collapse {
+    padding: 10px;
+    margin: 20px;
+    touch-action: cross-slide-x;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+}
+
+/* .dropdown-item {
+    padding: 30px;
+    text-wrap: wrap;
+
+} */
+
+/* NAVBAR-REQUEST-QUOTE BUTTON */
+.button-59 {
+    align-items: center;
+    background: transparent;
+    color: white;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    width: 155px;
+    height: 48px;
+    justify-content: center;
+    padding: calc(.5em - 1px) 1em;
+    text-align: center;
+    border-radius: 40px;
+    /* margin-right: 40px; */
+
+}
+
+
+.button-60 {
+    align-items: center;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    color: #262525;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 12px;
+    width: 155px;
+    height: 48px;
+    justify-content: center;
+    padding: calc(.5em - 1px) 1em;
+    /* position: relative; */
+    text-align: center;
+    user-select: none;
+    border-radius: 40px;
+    /* margin-right: 40px; */
+
+}
+
+.button-60:active {
+    border-color: #4a4a4a;
+    outline: 0;
+}
+
+.button-60:focus {
+    border-color: #485fc7;
+    outline: 0;
+}
+
+.button-60:hover {
+    border-color: #b5b5b5;
+}
+
+.button-60:focus:not(:active) {
+    box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+
+
+
+
+/* ========MEDIA QUERIES STARTS ========= */
+@media screen and (min-width:768px) {
+    .hambarmenu-bars {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background: none;
+        border-radius: 0px;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+    }
+
+    #NavLogo {
+        width: 180px;
+        margin-top: -5px;
+        margin-left: 50px;
+
+
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+        margin-top: -40px;
+
+    }
+
+    .button-59 {
+        margin-right: 40px;
+
+    }
+
+    .button-60 {
+        margin-right: 40px;
+    }
+
+    
+
+    .ml-auto {
+        padding: 10%;
+
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    .navbar {
+        position: static;
+       
+    }
+    #NavLogo {
+        margin-left: 15%;
+        margin-top: -38px;
+        /* height: 7rem; */
+    }
+
+
+    /* =====SERVICES STYLE ===== */
+    .navbar-nav .nav-item {
+        text-align: start;
+        margin-left: 15px;
+
+    }
+
+    .navbar-nav .nav-item .dropdown-menu {
+    background-color: transparent;
+      /* width: 200px; */
+      /* word-wrap: break-word; */
+      white-space: normal;
+      color: rgb(0, 0, 0);
+      width: 250px;
+      text-wrap: nowrap !important;
+      /* max-width: 100%; */
+    } 
+    .dropdown-item {
+        /* word-wrap: break-word !important; */
+        width: 250px;
+          /* max-width: 100%; */
+    }
+
+    #p{
+        border: 1px transparent;
+        word-wrap: break-word;
+        width: 100px;
+    }  
+      
+      
+}
